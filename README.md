@@ -13,4 +13,4 @@ THEN I am again presented with current and future conditions for that city</br>
 ## Usage
 To use this module click following link: https://ekamjotsidhu.github.io/Weather-forecast-app/</br>
 The screenshot below shows the final webpage</br>
-    ![alt text](Assets/Screenshot 2022-11-06 223247.png)
+    ![alt text](./Assets/Screenshot%202022-11-06%20223247.png)
