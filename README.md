@@ -10,7 +10,7 @@ WHEN I view future weather conditions for that city</br>
 THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity</br>
 WHEN I click on a city in the search history</br>
 THEN I am again presented with current and future conditions for that city</br>
-##Usage
+## Usage
 To use this module click following link: https://ekamjotsidhu.github.io/Weather-forecast-app/</br>
-The screenshot below shows the final webpage
+The screenshot below shows the final webpage</br>
     ![alt text](Assets/Screenshot 2022-11-06 223247.png)
