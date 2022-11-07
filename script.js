@@ -3,13 +3,13 @@ var search = document.getElementById('search')
 search.addEventListener('click', function display() {
     var city = document.getElementById('typeCity')
     var display = document.getElementById('cityName')
-    var geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city.value}&limit=1&appid=3aeb0185f22329876d558da2db988735`
+    var geoUrl = `https://api.openweathermap.org/geo/1.0/direct?q=${city.value}&limit=1&appid=3aeb0185f22329876d558da2db988735`
     fetch(geoUrl)
         .then((response) => response.json())
         .then((data) => {
             var lat = data[0].lat
             var long = data[0].lon
-            var weatherUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=3aeb0185f22329876d558da2db988735&units=metric`
+            var weatherUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${long}&appid=3aeb0185f22329876d558da2db988735&units=metric`
             fetch(weatherUrl)
                 .then(response => response.json())
                 .then(function weatherCheck(data) {
@@ -44,7 +44,7 @@ search.addEventListener('click', function display() {
                     console.log(data)
                     display.innerText = `${data.city.name} (${date})`
                     var weatherIcon = document.getElementById('weatherIcon')
-                    weatherIcon.src = ` http://openweathermap.org/img/wn/${icon}@2x.png`
+                    weatherIcon.src = ` https://openweathermap.org/img/wn/${icon}@2x.png`
                     weatherIcon.style = 'display:inline;height:25px;width:25px'
                     document.getElementById('tempSpan').textContent = data.list[0].main.temp
                     document.getElementById('windSpan').textContent = data.list[0].wind.speed
@@ -63,7 +63,7 @@ search.addEventListener('click', function display() {
                                 var finalDate = newDate.toLocaleDateString()
                                 nextDate.textContent = finalDate
                                 var forecastIconP = document.createElement('img')
-                                forecastIconP.src = ` http://openweathermap.org/img/wn/${data.list[j].weather[0].icon}@2x.png`
+                                forecastIconP.src = ` https://openweathermap.org/img/wn/${data.list[j].weather[0].icon}@2x.png`
                                 var forecastTemp = document.createElement('p')
                                 forecastTemp.textContent = `Temp: ${data.list[j].main.temp}`
                                 var forecastWind = document.createElement('p')
