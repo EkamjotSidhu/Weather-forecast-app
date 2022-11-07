@@ -49,7 +49,7 @@ search.addEventListener('click', function display() {
                     document.getElementById('tempSpan').textContent = data.list[0].main.temp
                     document.getElementById('windSpan').textContent = data.list[0].wind.speed
                     document.getElementById('humSpan').textContent = data.list[0].main.humidity
-                    var dateToday = data.list[39].dt - (5 * 86400)
+                    var dateToday = data.list[39].dt - (5 * 86400);
 
                     var next5Days = document.getElementsByClassName('days')
 
