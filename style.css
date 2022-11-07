@@ -1,0 +1,55 @@
+.dash {
+    background-image: linear-gradient(to right, rgb(67, 139, 221), rgb(4, 4, 88));
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.main {
+    display: flex;
+
+}
+
+#forecast {
+    display: block;
+    margin: 20px;
+    width: 80vw;
+}
+
+#detailed {
+    display: flex;
+}
+
+#city {
+    margin: 10px;
+    display: block;
+    width: 20vw;
+}
+
+#cityName {
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+#brief {
+    border: solid black 1px;
+    padding: 10px;
+
+}
+
+button {
+    width: 19vw;
+    margin-top: 10px;
+    background-color: rgb(67, 139, 221);
+    color: white;
+    padding: 5px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+button:active {
+    background-color: rgb(22, 46, 73);
+    box-shadow: 2px 2px grey;
+    
+}
+

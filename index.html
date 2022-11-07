@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forecast</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="dash">Weather Dashboard</div>
+    <div class="main">
+        <div id="city">
+            <p style="font-size:x-large;font-weight:bolder">Search for a City:</p>
+            <input type="text" id="typeCity" placeholder="Toronto" style="width: 18.5vw; height: 25px;">
+            <button id="search">Search</button>
+            <hr>
+            <div id="history">
+                <!-- <div class="history"></div>
+                <div class="history"></div>
+                <div class="history"></div>
+                <div class="history"></div>
+                <div class="history"></div>
+                <div class="history"></div>
+                <div class="history"></div>
+                <div class="history"></div>
+                <div class="history"></div>
+                <div class="history"></div> -->
+            </div>
+        </div>
+        <div id="forecast">
+            <div id="brief">
+                <p id="weatherNow">
+                    <span id="cityName"></span>
+                    <img id="weatherIcon" style="display:none">
+                </p>
+                <p>Temp: <span id="tempSpan"></span></p>
+                <p>Wind: <span id="windSpan"></span></p>
+                <p>Humidity: <span id="humSpan"></span></p>
+            </div>
+            <div id="5Day" style="margin-top: 20px;">5-Day Forecast:
+                <div id="detailed">
+                    <div class="days" id="day1">
+                    </div>
+                    <div class="days" id="day2">
+                    </div>
+                    <div class="days" id="day3">
+                    </div>
+                    <div class="days" id="day4">
+                    </div>
+                    <div class="days" id="day5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
